@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e293b;
+    --background-color: #f8fafc;
+    --card-background: #ffffff;
+    --text-color: #1e293b;
+    --footer-background: #1e293b;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.header {
+    background-color: var(--card-background);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--footer-background);
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+/* Espacio para evitar que el contenido se cubra por el encabezado */
+.main-content {
+    padding-top: 5rem; /* Ajusta según la altura del encabezado */
+}
+
+/* Aplicar padding-top en secciones importantes */
+.hero,
+.features,
+.planes-section,
+.contact-header,
+.contact-container {
+    padding-top: 5rem;
+}
